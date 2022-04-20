@@ -1,0 +1,26 @@
+.info {
+  background-color: black;
+  color:aquamarine;
+  font-family: "Comic Sans MS", serif;
+}
+
+  .component2 {
+    background-color: cadetblue;
+    color:darkblue;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: center;
+  }
+
+p {
+  text-align: left;
+  font-size: medium;
+}
+.bordering {
+  border: 30px solid;
+  padding: 15px;
+
+}
