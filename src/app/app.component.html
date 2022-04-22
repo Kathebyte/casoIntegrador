@@ -5,6 +5,21 @@
   <h2>
     {{carrera}}
   </h2>
+
+  <table [class.component2]>
+    <tr>
+      <td [class.imagen]>
+        <div><img src="assets/Cris.png" height="250" alt="photo"></div>
+      </td>
+      <td [class.video]>
+        <iframe  height="250" src="https://www.youtube.com/embed/cfomPhuFcwU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </td>
+    </tr>
+  </table>
+
+  <a href="https://www.linkedin.com/in/cristian-gutierrez-yayobyte/">Linkedin</a>
+
+
     <p>
       {{email}}
     </p>
@@ -14,5 +29,73 @@
     <p>
       {{direccion}}
     </p>
-    <img src="assets/Cris.png" height="250" alt="photo"/>
+
+  <button
+    (click)="togglesabout()"
+    class=btn>
+    {{showAbout ? "Hide About" : "Show About"}}
+  </button>
+
+  <div *ngIf="showAbout" class="component3">
+    <h3>Informacion:</h3>
+    <p>{{about}}</p>
+  </div>
+
+<button
+  (click)="toggleExperiencia()"
+  class=btn>
+  {{showExperiencia ? "Hide experiencia" : "Show experiencia"}}
+</button>
+
+  <div *ngIf="showExperiencia" class="component2">
+    <h3>Experiencia:</h3>
+      <table [class.component2]>
+          <tr style=background-color:cadetblue;color:white>
+           <td>Empresa</td>
+           <td>Cargo</td>
+           <td>fecha de Inicio</td>
+           <td>fecha de salida</td>
+         </tr>
+
+          <tr>
+            <td>Banque Saudi Fransi </td>
+            <td>Frontend Engineer</td>
+            <td>NOV2021</td>
+            <td>Actual trabajo</td>
+          </tr>
+
+          <tr>
+            <td>Tradeling.com </td>
+            <td>Senior Frontend Engineer</td>
+            <td>OCT2020</td>
+            <td>OCT2021</td>
+          </tr>
+
+          <tr>
+            <td>Mashreq Bank  </td>
+            <td>Front End Developer (External Consultant)</td>
+            <td>JUL2020</td>
+            <td>SEP2020</td>
+          </tr>
+  </table>
+     </div>
+
+
+  <button
+    (click)="toggleskills()"
+    class=btn>
+    {{showskills ? "Hide skills" : "Show skills"}}
+  </button>
+
 </div>
+
+<div *ngIf="showskills" class="component3">
+  <h3>skills:</h3>
+  <ul>
+    <li *ngFor="let skill of skills">
+      {{skill}}
+    </li>
+  </ul>
+</div>
+
+

@@ -1,12 +1,14 @@
 .info {
-  background-color: black;
+  background-color: grey;
   color:aquamarine;
   font-family: "Comic Sans MS", serif;
+  text-align: center;
 }
 
   .component2 {
     background-color: cadetblue;
     color:darkblue;
+    text-align: center;
   }
 
   h2 {
@@ -18,9 +20,41 @@
 p {
   text-align: left;
   font-size: medium;
+  padding:12px ;
 }
 .bordering {
   border: 30px solid;
   padding: 15px;
+
+}
+
+ .component3 {
+   background-color: beige;
+   color:darkslateblue;
+   text-align: left;
+   padding: 50px;
+   font-family: "Comic Sans MS", serif;
+ }
+
+tr{
+  background-color: black;
+  color:aquamarine;
+  font-family: "Comic Sans MS", serif;
+}
+
+.btn {
+  padding: 20px;
+  color: blueviolet;
+  background-color: #b3b0e6;
+  display: block;
+  margin: 5px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", serif;
+}
+
+.video {
+  padding: 200px;
+  margin: 50px;
+  text-align: right;
 
 }
