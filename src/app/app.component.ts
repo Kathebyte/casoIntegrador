@@ -18,6 +18,7 @@ export class AppComponent {
   about: string;
   showAbout: boolean
   showExperiencia: boolean
+  servicios:string;
 
 
   constructor() {
@@ -32,6 +33,8 @@ export class AppComponent {
     this.about = "Computer Sciences Bachelor with 8 years of experience in software development. Scrum Developer Certified with good knowledge in Agile Teams and processes.Developer Certified with good knowledge in Agile Teams and processes"
     this.showAbout = false
     this.showExperiencia = false
+    this.servicios= " Si deseas mas informacion comunicate con nuestras lineas, el te podra ayudar en tus proyectos./" +
+      "Es un experto en JavaScript,Reack.js,css,Typescript,Coaching,web Developer,scrum"
   }
 
   toggleskills() {
