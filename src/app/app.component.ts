@@ -39,7 +39,7 @@ export class AppComponent {
   }
 
   togglesabout() {
-    this.showAbout = !this.showskills;
+    this.showAbout = !this.showAbout;
 
   }
   toggleExperiencia() {

@@ -1,4 +1,4 @@
-<div class="info ">
+<div class="info">
   <h1>
     {{name}}
   </h1>
@@ -6,7 +6,7 @@
     {{carrera}}
   </h2>
 
-  <table [class.component2]>
+  <table class="component4">
     <tr>
       <td [class.imagen]>
         <div><img src="assets/Cris.png" height="250" alt="photo"></div>
@@ -17,7 +17,7 @@
     </tr>
   </table>
 
-  <a href="https://www.linkedin.com/in/cristian-gutierrez-yayobyte/">Linkedin</a>
+  <a href="https://www.linkedin.com/in/cristian-gutierrez-yayobyte/" target="_blank">Linkedin</a>
 
 
     <p>
@@ -49,7 +49,7 @@
 
   <div *ngIf="showExperiencia" class="component2">
     <h3>Experiencia:</h3>
-      <table [class.component2]>
+      <table>
           <tr style=background-color:cadetblue;color:white>
            <td>Empresa</td>
            <td>Cargo</td>
@@ -87,15 +87,15 @@
     {{showskills ? "Hide skills" : "Show skills"}}
   </button>
 
-</div>
+  <div *ngIf="showskills" class="component3">
+    <h3>skills:</h3>
+    <ul>
+      <li *ngFor="let skill of skills">
+        {{skill}}
+      </li>
+    </ul>
+  </div>
 
-<div *ngIf="showskills" class="component3">
-  <h3>skills:</h3>
-  <ul>
-    <li *ngFor="let skill of skills">
-      {{skill}}
-    </li>
-  </ul>
 </div>
 
 

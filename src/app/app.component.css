@@ -1,13 +1,20 @@
 .info {
-  background-color: grey;
-  color:aquamarine;
+  background-color: darkgray;
+  color: aquamarine;
   font-family: "Comic Sans MS", serif;
   text-align: center;
+  margin: 0 0 32px 0;
 }
 
   .component2 {
     background-color: cadetblue;
     color:darkblue;
+    text-align: center;
+  }
+
+  .component4 {
+    margin: 32px 0;
+    width: 100%;
     text-align: center;
   }
 
@@ -17,16 +24,16 @@
     text-align: center;
   }
 
-p {
-  text-align: left;
-  font-size: medium;
-  padding:12px ;
-}
-.bordering {
-  border: 30px solid;
-  padding: 15px;
+  p {
+    text-align: left;
+    font-size: medium;
+    padding:2px 8px ;
+  }
 
-}
+  .bordering {
+    border: 30px solid;
+    padding: 15px;
+  }
 
  .component3 {
    background-color: beige;
@@ -36,8 +43,7 @@ p {
    font-family: "Comic Sans MS", serif;
  }
 
-tr{
-  background-color: black;
+tr {
   color:aquamarine;
   font-family: "Comic Sans MS", serif;
 }
