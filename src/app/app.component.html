@@ -48,7 +48,7 @@
 </button>
 
   <div *ngIf="showExperiencia" class="component2">
-    <h3>Experiencia:</h3>
+    <h3>EXPERIENCIA:</h3>
       <table>
           <tr style=background-color:cadetblue;color:white>
            <td>Empresa</td>
@@ -96,10 +96,40 @@
     </ul>
   </div>
 
-  <h4 style="color:blue">
-    {{servicios}}
-  </h4>
+  <button
+    (click)="toggleEducation()"
+    class=btn>
+    {{showEducation ? "Hide Education" : "Show Education"}}
+  </button>
 
-</div>
+  <div *ngIf="showEducation" class="component2">
+    <h3>EDUCACION:</h3>
+      <table>
+        <tr style= background-color:cadetblue;color:white>
+          <td>Nombre institucion</td>
+          <td>Titulo</td>
+          <td>Duracion</td>
+        </tr>
+
+        <tr>
+          <td>Institucion Universitaria Metropolitana</td>
+          <td>Computer science Technologist</td>
+          <td>2014-2018</td>
+        </tr>
+
+        <tr>
+          <td>Universidad Tecnologica de Perira</td>
+          <td>Web Developer</td>
+          <td>2004-2007</td>
+        </tr>
+
+        <tr>
+          <td>New york English Institute</td>
+          <td>Bilinguel, English Language</td>
+          <td>2003-2005</td>
+        </tr>
+      </table>
+
+  </div>
 
 

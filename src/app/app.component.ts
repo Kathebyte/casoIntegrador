@@ -18,12 +18,12 @@ export class AppComponent {
   about: string;
   showAbout: boolean
   showExperiencia: boolean
-  servicios:string;
+  showEducation: boolean
 
 
   constructor() {
 
-    this.name = "CRISTIAN GUTERREZ"
+    this.name = "CRISTIAN GUTIERREZ"
     this.email = "cris123@gmail.com"
     this.contacto = "+9715845141123"
     this.direccion = "Dubai, Emiratos Árabes Unidos"
@@ -33,8 +33,7 @@ export class AppComponent {
     this.about = "Computer Sciences Bachelor with 8 years of experience in software development. Scrum Developer Certified with good knowledge in Agile Teams and processes.Developer Certified with good knowledge in Agile Teams and processes"
     this.showAbout = false
     this.showExperiencia = false
-    this.servicios= " Si deseas mas informacion comunicate con nuestras lineas, el te podra ayudar en tus proyectos./" +
-      "Es un experto en JavaScript,Reack.js,css,Typescript,Coaching,web Developer,scrum"
+    this.showEducation = false
   }
 
   toggleskills() {
@@ -47,5 +46,8 @@ export class AppComponent {
   }
   toggleExperiencia() {
     this.showExperiencia = !this.showExperiencia
+  }
+  toggleEducation() {
+    this.showEducation = !this.showEducation
   }
 }

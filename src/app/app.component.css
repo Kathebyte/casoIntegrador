@@ -39,21 +39,25 @@
    background-color: beige;
    color:darkslateblue;
    text-align: left;
-   padding: 50px;
+   padding: 60px;
    font-family: "Comic Sans MS", serif;
  }
 
 tr {
   color:aquamarine;
   font-family: "Comic Sans MS", serif;
+  text-align:center;
+
+
+
 }
 
 .btn {
-  padding: 20px;
+  padding: 25px;
   color: blueviolet;
   background-color: #b3b0e6;
   display: block;
-  margin: 5px;
+  margin: 6px;
   font-weight: bold;
   font-family: "Comic Sans MS", serif;
 }
